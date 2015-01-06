@@ -37,7 +37,7 @@ Run the following in your terminal
 ````
 crontab -e
 ````
-Remove the analogous lines from your CRON window
+Remove the analogous line from your CRON list
 ````
 55 8 * * 1-5 /usr/local/bin/node /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
 ````
