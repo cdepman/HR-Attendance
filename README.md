@@ -10,7 +10,7 @@ HR-Attendance allows HR students to automatically sign into Bookstrap
 ##How to run?
 Install PhantomJS and CasperJS by running the following command in terminal:
 ````
-brew update && brew install phantomjs && brew install casperjs
+brew update && brew install phantomjs && brew install casperjs --devel
 ````
 Fill the ./config/yourGithubAccountInfo.js file with your github account info:
 ````
