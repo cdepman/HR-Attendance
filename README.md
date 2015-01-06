@@ -8,9 +8,9 @@ HR-Attendance allows HR students to automatically sign into Bookstrap
 ##Solution
 
 ##How to run?
-Install CasperJS by running the following command in terminal:
+Install PhantomJS and CasperJS by running the following command in terminal:
 ````
-brew install casperjs
+brew update && brew install phantomjs && brew install casperjs
 ````
 Fill the ./config/yourGithubAccountInfo.js file with your github account info:
 ````
@@ -29,6 +29,15 @@ Run the following command to preview your current CRON jobs:
 crontab -l
 ````
 The output should look similar to the following:
+````
+55 8 * * 1-5 /usr/local/bin/node /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
+````
+##I just graduated HR. How do I remove this CRON job?
+Run the following in your terminal
+````
+crontab -e
+````
+Remove the analogous lines from your CRON window
 ````
 55 8 * * 1-5 /usr/local/bin/node /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
 ````
