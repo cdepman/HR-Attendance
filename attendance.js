@@ -1,5 +1,5 @@
 var casper = require('casper').create();
-var githubAccountInfo = require('./config/githubAccountInfo');
+var githubAccountInfo = require('./config/yourGithubAccountInfo');
 
 casper.start('http://bookstrap.hackreactor.com/auth/login',function() {
   this.mouse.click('.button');

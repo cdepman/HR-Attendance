@@ -4,6 +4,7 @@
   "description": "",
   "main": "attendence.js",
   "scripts": {
+    "start": "chmod u+x ./startCRON.sh; ./startCRON.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
