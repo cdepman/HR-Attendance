@@ -1,11 +1,7 @@
 #HR-Attendance
 
 ##Summary
-HR-Attendance allows HR students to automatically sign into Bookstrap
-
-##Problem
-
-##Solution
+HR-Attendance sets up a CRON job that automatically signs a user into Bookstrap
 
 ##How to run?
 Install PhantomJS and CasperJS by running the following command in terminal:
@@ -32,12 +28,12 @@ The output should look similar to the following:
 ````
 55 8 * * 1-5 PHANTOMJS_EXECUTABLE=/usr/local/bin/phantomjs /usr/local/bin/casperjs /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
 ````
-##I just graduated HR. How do I remove this CRON job?
+##How do I remove this CRON job?
 Run the following in your terminal
 ````
 crontab -e
 ````
-Remove the analogous line from your CRON list
+Remove the analogous line from your CRON list:
 ````
 55 8 * * 1-5 PHANTOMJS_EXECUTABLE=/usr/local/bin/phantomjs /usr/local/bin/casperjs /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
 ````
