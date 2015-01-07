@@ -30,7 +30,7 @@ crontab -l
 ````
 The output should look similar to the following:
 ````
-55 8 * * 1-5 /usr/local/bin/node /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
+55 8 * * 1-5 PHANTOMJS_EXECUTABLE=/usr/local/bin/phantomjs /usr/local/bin/casperjs /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
 ````
 ##I just graduated HR. How do I remove this CRON job?
 Run the following in your terminal
@@ -39,5 +39,5 @@ crontab -e
 ````
 Remove the analogous line from your CRON list
 ````
-55 8 * * 1-5 /usr/local/bin/node /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
+55 8 * * 1-5 PHANTOMJS_EXECUTABLE=/usr/local/bin/phantomjs /usr/local/bin/casperjs /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
 ````
