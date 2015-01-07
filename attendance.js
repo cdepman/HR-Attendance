@@ -1,5 +1,5 @@
 var casper = require('casper').create();
-var githubAccountInfo = require('./config/githubAccountInfo');
+var githubAccountInfo = require('./config/yourGithubAccountInfo');
 
 casper.start('http://bookstrap.hackreactor.com/auth/login',function() {
   this.mouse.click('.button');
@@ -13,9 +13,10 @@ casper.then(function() {
 });
 
 casper.thenOpen('http://bookstrap.hackreactor.com/attendance', function () {
-  this.waitForSelector('button.ready-to-learn', function() {
-    this.mouse.click('button.ready-to-learn');
-  });
+    this.waitForSelector('button.ready-to-learn', function() {
+      this.mouse.click('button.ready-to-learn');
+    }, function() {
+    });
 });
 
 casper.run();
