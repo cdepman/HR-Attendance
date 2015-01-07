@@ -15,13 +15,7 @@ casper.then(function() {
 casper.thenOpen('http://bookstrap.hackreactor.com/attendance', function () {
   this.waitForSelector('button.ready-to-learn', function() {
     this.mouse.click('button.ready-to-learn');
-    this.capture('click1.png');
   });
 });
-
-// casper.then(function() {
-//   this.mouse.click('button.ready-to-learn');
-//   this.capture('click2.png');
-// });
 
 casper.run();
