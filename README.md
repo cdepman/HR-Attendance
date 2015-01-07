@@ -37,4 +37,4 @@ Remove the analogous line from your CRON list:
 ````
 55 8 * * 1-5 PHANTOMJS_EXECUTABLE=/usr/local/bin/phantomjs /usr/local/bin/casperjs /Users/Zai/Desktop/HackReactor/Attendance/attendance.js
 ````
-###Please contact me if you run into any errors and star this repo if you found this service useful
+###Please contact me if you run into any errors or star this repo if you found this service useful
