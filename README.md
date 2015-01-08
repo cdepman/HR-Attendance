@@ -8,16 +8,13 @@ Install PhantomJS and CasperJS by running the following command in terminal:
 ````
 brew update && brew install phantomjs && brew install casperjs --devel
 ````
-Fill the ./config/yourGithubAccountInfo.js file with your github account info:
-````
-module.exports = {
-  username: 'username',
-  password: 'password'
-};
-````
 Run the following command to save this CRON job:
 ````
 npm start
+````
+Input your github username and password that will be used to sign into bookstrap (your information will be encrypted and stored only on your computer):
+````
+
 ````
 ##How do I know this script is running?
 Run the following command to preview your current CRON jobs:

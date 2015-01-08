@@ -4,7 +4,7 @@
   "description": "",
   "main": "attendence.js",
   "scripts": {
-    "start": "chmod u+x ./startCRON.sh; ./startCRON.sh",
+    "start": "chmod u+x ./start.sh; ./start.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +17,5 @@
     "url": "https://github.com/azai91/Attendence/issues"
   },
   "homepage": "https://github.com/azai91/Attendence",
-  "dependencies": {
-    "casperjs": "^1.1.0-beta3",
-    "phantomjs": "^1.9.13"
-  }
+  "dependencies": {}
 }
